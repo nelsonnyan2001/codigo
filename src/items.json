@@ -1,0 +1,184 @@
+[
+    {
+        "name": "7Rewards",
+        "category": [
+            "",
+            "Retail & Entertainment"
+        ],
+        "legend": [
+            "APP",
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/04/711.jpg"
+    },
+    {
+        "name": "My Republic Mobile",
+        "category": [
+            "",
+            "Telco"
+        ],
+        "legend": [
+            "APP",
+            "UI"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/MYR.jpg"
+    },
+    {
+        "name": "ComfortDelGro",
+        "category": [
+            "",
+            "Transport & Logistics"
+        ],
+        "legend": [
+            "APP"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/08/CDG-2-1.jpg"
+    },
+    {
+        "name": "FairPrice Online",
+        "category": [
+            "",
+            "Retail & Entertainment"
+        ],
+        "legend": [
+            "UI"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/08/FPOL.jpg"
+    },
+    {
+        "name": "Charles & Keith / Pedro",
+        "category": [
+            "",
+            "Retail & Entertainment"
+        ],
+        "legend": [
+            "APP"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/ck.jpg"
+    },
+    {
+        "name": "Justice League",
+        "category": [
+            "",
+            "Retail & Entertainment"
+        ],
+        "legend": [
+            "APP"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/11/thumbnail-justice_league@2x.jpg"
+    },
+    {
+        "name": "FastFast",
+        "category": [
+            "",
+            "Transport & Logistics",
+            "Co-incubation",
+            "Start-ups"
+        ],
+        "legend": [
+            "APP",
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/FF-1.jpg"
+    },
+    {
+        "name": "Fullerton Health",
+        "category": [
+            "",
+            "Healthcare"
+        ],
+        "legend": [
+            "APP"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/11/fullerton-health-thumbnail@2x.jpg"
+    },
+    {
+        "name": "Sky Premium",
+        "category": [
+            "",
+            "Lifestyle"
+        ],
+        "legend": [
+            "APP",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/11/skypremium-thumbnail@2x.jpg"
+    },
+    {
+        "name": "T Singapore",
+        "category": [
+            "",
+            "Lifestyle"
+        ],
+        "legend": [
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/TSingapore-thumbnail@2x.jpg"
+    },
+    {
+        "name": "SingPost",
+        "category": [
+            "",
+            "Transport & Logistics"
+        ],
+        "legend": [
+            "APP",
+            "UI"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/singpost-thumbnail@2x.jpg"
+    },
+    {
+        "name": "Dine Inn",
+        "category": [
+            "",
+            "Co-incubation",
+            "Start-ups",
+            "Food & Beverage"
+        ],
+        "legend": [
+            "APP",
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/dineinn.jpg"
+    },
+    {
+        "name": "Siemens Engineering",
+        "category": [
+            "",
+            "Transport & Logistics"
+        ],
+        "legend": [
+            "APP",
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/11/siemens.jpg"
+    },
+    {
+        "name": "Singapore Grand Prix",
+        "category": [
+            ""
+        ],
+        "legend": [
+            "APP",
+            "PC",
+            "CMS"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/f1.jpg"
+    },
+    {
+        "name": "McDonald's",
+        "category": [
+            "",
+            "Food & Beverage"
+        ],
+        "legend": [
+            "APP"
+        ],
+        "img": "https://cdn.codigo.co/uploads/2018/12/mc-cafe-thumbnail@2x.jpg"
+    }
+]

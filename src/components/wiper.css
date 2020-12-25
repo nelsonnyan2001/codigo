@@ -1,0 +1,52 @@
+.wrapper {
+    background-color: #d5333e;
+}
+
+.bg {
+    background-color: white;
+    animation: wipe 1.2s linear;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 100%;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes wipe {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+.el {
+    width: 100vw;
+    font-family: "Noto Sans JP";
+    height: 100vh;
+}
+
+.el:after {
+    content: "DON'T BE \ATHE SAME. \A BE BETTER.";
+    white-space: pre;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    vertical-align: middle;
+    line-height: 85%;
+    left: 20vw;
+    text-align: left;
+    font-size: 10vw;
+    color: #29fff1;
+    animation: fadeOut 1s;
+    animation-delay: 2s;
+    mix-blend-mode: difference;
+
+}

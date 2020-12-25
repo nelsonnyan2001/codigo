@@ -1,0 +1,27 @@
+.cta-title {
+    font-size: 1.6rem;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+.subtitle {
+    font-weight: 400;
+    font-size: 0.8rem;
+}
+
+.cta-title:hover {
+    cursor: pointer;
+    color: #d5333e;
+}
+
+.arrow {
+    width: 15px;
+    height: 9px;
+    margin-bottom: 4px;
+    margin-left: 15px;
+    transition: all 1.5s ease;
+}
+
+.cta-title:hover>.arrow {
+    transform: translateX(15px)
+}
