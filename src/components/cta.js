@@ -3,7 +3,6 @@ import './cta.css'
 import Arrow from '../svg/arrow-red.svg'
 
 export default function cta(props) {
-    console.log(props)
     return (
         <div>
             <p className="cta-title">

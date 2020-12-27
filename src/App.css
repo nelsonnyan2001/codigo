@@ -19,6 +19,112 @@
   }
 }
 
+@keyframes fadeInBtn {
+  0% {
+    opacity: 0;
+    transform: scale(0.5)
+  }
+
+  100% {
+    opacity: 100%;
+    transform: scale(1);
+  }
+}
+
+
+.filterButton {
+  cursor: pointer;
+  left: -40px;
+  top: calc(50vh - 40px);
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  z-index: 500;
+  background-color: #d5333e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+  transition: transform 0.4s;
+  animation: fadeInBtn 1s;
+}
+
+
+.moved {
+  transform: translateX(240px)
+}
+
+.moved>p {
+  transform: unset
+}
+
+.filterButton:hover {
+  transform: scale(1.25);
+}
+
+.filterButton>p {
+  font-weight: 800;
+  font-size: 12px;
+  color: white;
+  text-align: center;
+  transform: translateX(20px) rotate(-90deg);
+  transition: all 1s;
+}
+
+.moved:hover {
+  transform: translateX(240px) scale(1.25);
+}
+
+
+
+.sideMenu {
+  transition: all 1s ease;
+  overflow-y: hidden;
+  position: fixed;
+  height: 100vh;
+  background-color: white;
+  z-index: 500;
+  box-shadow: 10px 10px 111px -34px rgba(0, 0, 0, 0.75);
+}
+
+.sideMenu>div {
+  position: relative
+}
+
+.sideMenu>.active>p::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  width: 15px;
+  content: '';
+  display: inline-block;
+  top: 50%;
+  border-radius: 20px;
+  left: -18px;
+  background-color: #d5333e;
+  position: absolute;
+}
+
+.sideMenu {
+  width: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.openSide {
+  width: 300px;
+  padding: 0 50px;
+}
+
+
+.sideMenu>* {
+  white-space: nowrap;
+  cursor: pointer;
+}
+
 .burger {
   display: none;
   height: 46px;
@@ -59,7 +165,6 @@
   position: absolute;
   top: 11px;
   left: 13px;
-  overflow: visible;
 }
 
 .cross {
@@ -72,6 +177,7 @@
 }
 
 .lines>div {
+  cursor: pointer;
   width: 100%;
   height: 2px;
   background-color: white;
@@ -146,6 +252,8 @@ h2::after {
 }
 
 .active {
+  transform: translateX(18px);
+  transition: all .4s cubic-bezier(.2, 1, .2, 1);
   font-weight: 800;
 }
 
@@ -208,11 +316,6 @@ h2::after {
 
 .filters p:hover {
   cursor: pointer;
-}
-
-.filters .active p {
-  transform: translateX(18px);
-  transition: all .4s cubic-bezier(.2, 1, .2, 1);
 }
 
 .filters .active>p::before {
@@ -279,6 +382,7 @@ h2::after {
   border-right: none;
 }
 
+
 .socials {
   display: flex;
   justify-content: center;
@@ -288,6 +392,11 @@ h2::after {
   margin: 0 20px;
   height: 25px;
   width: 25px;
+  cursor: pointer
+}
+
+.socials>*:hover {
+  cursor: pointer;
 }
 
 .final {
@@ -304,6 +413,17 @@ h2::after {
 }
 
 @media only screen and (max-width: 1100px) {
+
+  .filterButton {
+    top: unset;
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .filterButton>p {
+    transform: unset;
+  }
+
   .showcase-container {
     grid-template-columns: repeat(3, 1fr);
   }

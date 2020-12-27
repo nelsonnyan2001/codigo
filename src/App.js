@@ -15,17 +15,33 @@ export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
+      isLoading: false,
       currentActive: 0,
       menuOpen: false,
-      currentFilter: '',
+      sideOpen: false,
+      showButton: false,
+      currentFilter: ''
     }
   }
 
   componentDidMount() {
+    window.addEventListener('scroll', this.onScroll)
     setTimeout(() => {
       this.setState({ isLoading: false })
     }, 3000);
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.onScroll)
+  }
+
+  onScroll = () => {
+    if ((document.body.scrollHeight - window.scrollY) > 900 && window.scrollY > 600) {
+      this.setState({ showButton: true })
+    }
+    else {
+      this.setState({ showButton: false })
+    }
   }
 
   onFilter = index => {
@@ -60,11 +76,40 @@ export default class App extends Component {
       var filteredList = items.filter((item, i) => item.category.includes(this.state.currentFilter))
       return (
         <div className={this.state.menuOpen ? "blocked" : ""}>
+          <div
+            onClick={() => this.setState({ sideOpen: !this.state.sideOpen })}
+            className={this.state.sideOpen ? "sideMenu openSide" : "sideMenu"}>
+            {this.categories.map((each, i) => {
+              return (<div onClick={() => this.onFilter(i)}
+                key={i}
+                className={i === this.state.currentActive ? "active" : "inactive"}
+              >
+                <p>
+                  {each}
+                </p>
+              </div>
+              )
+            }
 
-          {this.state.menuOpen &&
+            )}
+
+            <Legend />
+          </div>
+          {
+            this.state.showButton &&
+            <div className={this.state.sideOpen ? "moved filterButton" : "filterButton"}
+              onClick={() => this.setState({ sideOpen: !this.state.sideOpen })}>
+              <p>
+                Filter
+            </p>
+            </div>
+          }
+
+
+          {
+            this.state.menuOpen &&
             <div className="links"
               onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}>
-
               <div>
                 <a href="https://www.codigo.co/work">
                   Work
@@ -100,8 +145,10 @@ export default class App extends Component {
                   Let's chat!
                 </a>
               </div>
-            </div>}
-          <div className="parent">
+            </div>
+          }
+          <div className="parent"
+            onScroll={() => this.onScroll()}>
             <div className="menu-bar">
               <div onClick={() => this.setState({ menuOpen: !this.state.menuOpen })}
                 className="burger">
@@ -152,7 +199,6 @@ export default class App extends Component {
                 <div className="filters">
                   {this.categories.map((each, i) => {
                     return (<div onClick={() => this.onFilter(i)}
-
                       key={i}
                       className={i === this.state.currentActive ? "active" : "inactive"}
                     >
