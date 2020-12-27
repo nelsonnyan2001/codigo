@@ -50,15 +50,6 @@
   animation: fadeInBtn 1s;
 }
 
-
-.moved {
-  transform: translateX(240px)
-}
-
-.moved>p {
-  transform: unset
-}
-
 .filterButton:hover {
   transform: scale(1.25);
 }
@@ -76,7 +67,13 @@
   transform: translateX(240px) scale(1.25);
 }
 
+.moved {
+  transform: translateX(240px)
+}
 
+.moved>p {
+  transform: unset
+}
 
 .sideMenu {
   transition: all 1s ease;
