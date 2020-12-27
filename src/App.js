@@ -38,9 +38,9 @@ export default class App extends Component {
   onScroll = () => {
     if ((document.body.scrollHeight - window.scrollY) > 900 && window.scrollY > 600) {
       this.setState({ showButton: true })
-      this.setState({ sideOpen: false })
     }
     else {
+      this.setState({ sideOpen: false })
       this.setState({ showButton: false })
     }
   }
