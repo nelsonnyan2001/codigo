@@ -64,11 +64,11 @@
 }
 
 .moved:hover {
-  transform: translateX(240px) scale(1.25);
+  transform: translateX(300px) scale(1.25);
 }
 
 .moved {
-  transform: translateX(240px)
+  transform: translateX(300px)
 }
 
 .moved>p {
